@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+</head>
+<body>
+<div align="center">
+  <form method="post"  style="border:5px solid;width:30%;" action="/register/">
+          {% csrf_token %}
+
+  <div class="container" align="center">
+    <h1>Register</h1><br>
+
+    <label><b>User Name</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required><br><br>
+
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required><br><br>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password1" required><br><br>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="password2" required><br><br>
+
+    <button type="submit">Register</button>
+  </div>
+
+  <div class="container signin" align="center">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</div>
+</body>
+</html>
